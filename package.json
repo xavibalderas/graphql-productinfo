@@ -18,6 +18,7 @@
   "homepage": "https://github.com/xavibalderas/graphql-productinfo#readme",
   "dependencies": {
     "apollo-server": "^2.0.0-rc.5",
-    "graphql": "^0.13.2"
+    "graphql": "^0.13.2",
+    "graphql-request": "^1.6.0"
   }
 }
