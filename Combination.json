@@ -1,0 +1,431 @@
+{
+    "ir:ikea-rest":
+    {
+        "attr":
+        {
+            "version": "1.0",
+            "xsi:schemaLocation": "http://www.ikea.com/ikea-rest.xsd",
+            "xmlns:esi": "http://www.edge-delivery.org/esi/1.0",
+            "xmlns:ir": "http://www.ikea.com/v1.0",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+        },
+        "header":
+        {
+            "requestCommand": "ProductDisplay",
+            "responseType": "xml",
+            "datasets": ""
+        },
+        "products":
+        {
+            "product":
+            {
+                "URL": "/ch/de/catalog/products/26580/",
+                "browseable": true,
+                "partNumber": 26580,
+                "name": "Tarva",
+                "nameswe": "",
+                "numberOfItems": 8,
+                "items":
+                {
+                    "item":
+                    {
+                        "plannerUrl":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "partNumber": "S69929233",
+                        "URL": "/ch/de/catalog/products/S69929233/",
+                        "name": "TARVA",
+                        "new": false,
+                        "facts": "Bettgestell",
+                        "bti": false,
+                        "buyable": true,
+                        "browseable": true,
+                        "nameswe": "",
+                        "careInst": "<cis><ci><t>Mit einem feuchten Tuch abwischen.</t></ci><ci><t>Mit trockenem Tuch nachwischen.</t></ci></cis>",
+                        "custBenefit": "<cbs><cb><t>Aus Massivholz, einem strapazierfähigen, lebendigen Naturmaterial.</t></cb><cb><t>Durch Ölen, Lasieren oder Lackieren wird die unbehandelte Massivholzoberfläche noch strapazierfähiger und pflegeleichter.</t></cb></cbs>",
+                        "designer": "K Hagberg/M Hagberg/IKEA of Sweden",
+                        "environment": "<es><e><pt>Bettgestell</pt><t>Nachwachsendes Rohmaterial (Holz).</t></e><e><pt>Bettgestell</pt><t>Hölzer in IKEA Produkten unterliegen klaren Richtlinien inkl. des Verbots von illegal abgeholztem Wald. Bis 2020 soll alles Holz für unsere Produktion aus nachhaltigeren, d. h. zertifizierten oder recycelten Quellen stammen.</t></e></es>",
+                        "goodToKnow": "<gtks><gtk><t>SKORVA Mittelbalken ist im Preis enthalten, aber separat verpackt. Er ist zur Stabilisierung des Bettgestells nötig und verhindert das Verrutschen der Matratzen.</t></gtk><gtk><t>Federholzrahmen, Matratze und Bettwäsche sind separat erhältlich.</t></gtk></gtks>",
+                        "custMaterials": "<cms><cm><pt>Bettgestell</pt><m>massive Kiefer</m></cm><cm><pt>Mittelbalken</pt><m>verzinkter Stahl</m></cm></cms>",
+                        "nopackages": 2,
+                        "reqAssembly": true,
+                        "type": "Bettgestell",
+                        "energyClassLabel":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "hasProductFiche": false,
+                        "rangeNo":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "measure": "<rm><m><d>Länge</d><v>209 cm</v></m><m><d>Breite</d><v>168 cm</v></m><m><d>Fußteilhöhe</d><v>32 cm</v></m><m><d>Kopfteilhöhe</d><v>92 cm</v></m><m><d>Matratzenlänge</d><v>200 cm</v></m><m><d>Matratzenbreite</d><v>160 cm</v></m></rm>",
+                        "attributesItems":
+                        {
+                            "attributeItem":
+                            [
+                                {
+                                    "attr":
+                                    {
+                                        "name": "Größe"
+                                    },
+                                    "value": "160x200 cm"
+                                },
+                                {
+                                    "attr":
+                                    {
+                                        "name": "mit Lattenrost/Federholzrahmen ergänzen"
+                                    },
+                                    "value": "-"
+                                },
+                                {
+                                    "attr":
+                                    {
+                                        "name": "Farbe"
+                                    },
+                                    "value": "Kiefer"
+                                }
+                            ]
+                        },
+                        "images":
+                        {
+                            "small":
+                            {
+                                "image":
+                                {
+                                    "value": "https://www.ikea.com/PIAimages/0173711_PE327865_S1.JPG",
+                                    "attr":
+                                    {
+                                        "height": "40",
+                                        "width": "40"
+                                    }
+                                }
+                            },
+                            "thumb":
+                            {
+                                "image":
+                                {
+                                    "value": "https://www.ikea.com/PIAimages/0173711_PE327865_S2.JPG",
+                                    "attr":
+                                    {
+                                        "height": "110",
+                                        "width": "110"
+                                    }
+                                }
+                            },
+                            "normal":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0173711_PE327865_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0380691_PE555571_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0405436_PE566702_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0485201_PH100102_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0321952_PH121261_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0485205_PH121284_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0284838_PE362962_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    }
+                                ]
+                            },
+                            "large":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0173711_PE327865_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0380691_PE555571_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0405436_PE566702_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0485201_PH100102_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0321952_PH121261_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0485205_PH121284_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/tarva-bettgestell__0284838_PE362962_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    }
+                                ]
+                            },
+                            "zoom":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0173711_PE327865_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0380691_PE555571_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0405436_PE566702_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0485201_PH100102_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0321952_PH121261_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0485205_PH121284_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0284838_PE362962_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "prices":
+                        {
+                            "normal":
+                            {
+                                "priceNormal":
+                                {
+                                    "value": "CHF 99.95",
+                                    "attr":
+                                    {
+                                        "unformatted": "99.95"
+                                    }
+                                },
+                                "pricePrevious": "",
+                                "priceNormalPerUnit": "",
+                                "pricePreviousPerUnit": ""
+                            },
+                            "second":
+                            {
+                                "priceNormal": "",
+                                "priceChanged": "",
+                                "priceNormalPerUnit": "",
+                                "priceChangedPerUnit": ""
+                            },
+                            "family-normal":
+                            {
+                                "priceNormal": ""
+                            }
+                        },
+                        "subItems":
+                        {
+                            "article":
+                            [
+                                {
+                                    "attr":
+                                    {
+                                        "partNumber": "00249944",
+                                        "quantity": "1"
+                                    }
+                                },
+                                {
+                                    "attr":
+                                    {
+                                        "partNumber": "90124534",
+                                        "quantity": "1"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "categories":
+                {
+                    "collections": "",
+                    "systems": "",
+                    "series":
+                    {
+                        "category":
+                        {
+                            "identifier": 24979,
+                            "catalogIdentifier": "series",
+                            "name": "TARVA Serie",
+                            "URL": "/ch/de/catalog/categories/series/24979/"
+                        }
+                    },
+                    "parents":
+                    {
+                        "category":
+                        {
+                            "identifier": 16284,
+                            "catalogIdentifier": "departments",
+                            "name": "Doppelbetten",
+                            "URL": "/ch/de/catalog/categories/departments/bedroom/16284/"
+                        }
+                    }
+                },
+                "attributes":
+                {
+                    "attribute":
+                    [
+                        {
+                            "attr":
+                            {
+                                "name": "Größe"
+                            },
+                            "value":
+                            [
+                                "140x200 cm",
+                                "160x200 cm"
+                            ]
+                        },
+                        {
+                            "attr":
+                            {
+                                "name": "mit Lattenrost/Federholzrahmen ergänzen"
+                            },
+                            "value":
+                            [
+                                "-",
+                                "Leirsund",
+                                "Lönset",
+                                "Luröy"
+                            ]
+                        },
+                        {
+                            "attr":
+                            {
+                                "name": "Farbe"
+                            },
+                            "value": "Kiefer"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

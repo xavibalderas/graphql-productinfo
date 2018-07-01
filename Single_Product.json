@@ -1,0 +1,373 @@
+{
+    "ir:ikea-rest":
+    {
+        "attr":
+        {
+            "version": "1.0",
+            "xsi:schemaLocation": "http://www.ikea.com/ikea-rest.xsd",
+            "xmlns:esi": "http://www.edge-delivery.org/esi/1.0",
+            "xmlns:ir": "http://www.ikea.com/v1.0",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+        },
+        "header":
+        {
+            "requestCommand": "ProductDisplay",
+            "responseType": "xml",
+            "datasets": ""
+        },
+        "products":
+        {
+            "product":
+            {
+                "URL": "/ch/de/catalog/products/P50364149/",
+                "browseable": true,
+                "partNumber": "P50364149",
+                "name": "ODGER",
+                "nameswe": "",
+                "numberOfItems": 1,
+                "items":
+                {
+                    "item":
+                    {
+                        "plannerUrl":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "partNumber": 50364149,
+                        "URL": "/ch/de/catalog/products/50364149/",
+                        "name": "ODGER",
+                        "new": false,
+                        "facts": "Stuhl",
+                        "bti": false,
+                        "buyable": true,
+                        "browseable": true,
+                        "nameswe": "",
+                        "careInst": "<cis><ci><h>Stuhl</h><t>Mit feuchtem Tuch (evtl. mit mildem Reinigungsmittel) abwischen.</t></ci><ci><h>Stuhl</h><t>Mit trockenem Tuch nachwischen.</t></ci></cis>",
+                        "custBenefit": "<cbs><cb><t>Kein Werkzeug zur Montage des Stuhls erforderlich - Sitz und Untergestell werden durch einen schlichten Mechanismus unter dem Sitz einfach zusammengesteckt.</t></cb><cb><t>Durch das Material, das schlichte Design und die glatte Oberfläche leicht zu reinigen und praktisch, wenn Kinder im Haus sind.</t></cb></cbs>",
+                        "designer": "J Löfgren/J Pettersson",
+                        "environment":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "goodToKnow": "<gtks><gtk><t>Dieses Produkt ist für den Hausgebrauch getestet und erfüllt die Anforderungen hinsichtlich Haltbarkeit und Sicherheit gem. der Normen: EN 12520 und EN 1022.</t></gtk></gtks>",
+                        "custMaterials": "<cms><cm><m>Holz-Kunststoff-Komposit</m></cm></cms>",
+                        "showSummaryBenefits": "Durch Klickfunktion leicht ohne Werkzeug zu montieren. Komfortabel durch schalenförmigen Sitz und gerundete Rückenlehne. Aus erneuerbarem Rohstoff Holz und Recycling-Kunststoff gefertigt: rundum gelungen!",
+                        "nopackages": 1,
+                        "reqAssembly": true,
+                        "type": "Stuhl",
+                        "energyClassLabel":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "hasProductFiche": false,
+                        "rangeNo":
+                        {
+                            "attr":
+                            {
+                                "xsi:nil": "true",
+                                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                            }
+                        },
+                        "measure": "<rm><m><d>getestet für</d><v>110 kg</v></m><m><d>Breite</d><v>45 cm</v></m><m><d>Tiefe</d><v>51 cm</v></m><m><d>Höhe</d><v>81 cm</v></m><m><d>Sitzbreite</d><v>45 cm</v></m><m><d>Sitztiefe</d><v>41 cm</v></m><m><d>Sitzhöhe</d><v>43 cm</v></m></rm>",
+                        "attributesItems": "",
+                        "images":
+                        {
+                            "small":
+                            {
+                                "image":
+                                {
+                                    "value": "https://www.ikea.com/PIAimages/0516644_PE640470_S1.JPG",
+                                    "attr":
+                                    {
+                                        "height": "40",
+                                        "width": "40"
+                                    }
+                                }
+                            },
+                            "thumb":
+                            {
+                                "image":
+                                {
+                                    "value": "https://www.ikea.com/PIAimages/0516644_PE640470_S2.JPG",
+                                    "attr":
+                                    {
+                                        "height": "110",
+                                        "width": "110"
+                                    }
+                                }
+                            },
+                            "normal":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516644_PE640470_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516645_PE640471_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516646_PE640474_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516647_PE640473_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516648_PE640472_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577940_PH146665_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577935_PH146198_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577933_PH146283_S3.JPG",
+                                        "attr":
+                                        {
+                                            "height": "250",
+                                            "width": "250"
+                                        }
+                                    }
+                                ]
+                            },
+                            "large":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0516644_PE640470_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0516645_PE640471_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0516646_PE640474_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0516647_PE640473_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0516648_PE640472_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0577940_PH146665_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0577935_PH146198_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/ch/de/images/products/odger-stuhl-braun__0577933_PH146283_S4.JPG",
+                                        "attr":
+                                        {
+                                            "height": "500",
+                                            "width": "500"
+                                        }
+                                    }
+                                ]
+                            },
+                            "zoom":
+                            {
+                                "image":
+                                [
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516644_PE640470_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516645_PE640471_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516646_PE640474_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516647_PE640473_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0516648_PE640472_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577940_PH146665_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577935_PH146198_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    },
+                                    {
+                                        "value": "https://www.ikea.com/PIAimages/0577933_PH146283_S5.JPG",
+                                        "attr":
+                                        {
+                                            "height": "2000",
+                                            "width": "2000"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "prices":
+                        {
+                            "normal":
+                            {
+                                "priceNormal":
+                                {
+                                    "value": "CHF 79.95",
+                                    "attr":
+                                    {
+                                        "unformatted": "79.95"
+                                    }
+                                },
+                                "pricePrevious": "",
+                                "priceNormalPerUnit": "",
+                                "pricePreviousPerUnit": ""
+                            },
+                            "second":
+                            {
+                                "priceNormal": "",
+                                "priceChanged": "",
+                                "priceNormalPerUnit": "",
+                                "priceChangedPerUnit": ""
+                            },
+                            "family-normal":
+                            {
+                                "priceNormal": ""
+                            }
+                        },
+                        "subItems": ""
+                    }
+                },
+                "categories":
+                {
+                    "collections": "",
+                    "systems": "",
+                    "series": "",
+                    "parents":
+                    {
+                        "category":
+                        {
+                            "identifier": 25220,
+                            "catalogIdentifier": "departments",
+                            "name": "Essplatzstühle",
+                            "URL": "/ch/de/catalog/categories/departments/dining/25220/"
+                        }
+                    }
+                },
+                "attributes": ""
+            }
+        }
+    }
+}

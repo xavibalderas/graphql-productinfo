@@ -18,9 +18,12 @@
   "homepage": "https://github.com/xavibalderas/graphql-productinfo#readme",
   "dependencies": {
     "apollo-server": "^2.0.0-rc.5",
+    "async": "^2.6.1",
     "fast-xml-parser": "^3.11.1",
     "graphql": "^0.13.2",
     "graphql-request": "^1.6.0",
+    "npm": "^6.1.0",
+    "promise": "^8.0.1",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "xml-parse": "^0.3.1",
