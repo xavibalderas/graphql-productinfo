@@ -5,6 +5,15 @@ allbeds:
   allBeds {
       reference
     }
+  }`,
+
+combination:
+`{
+    Bed(reference: $reference) {
+      articles {
+        id
+      }
+    }
   }`
 
 };

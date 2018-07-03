@@ -26,15 +26,24 @@ const resolvers = {
       }
       return request(r_uri).then(body => {
         return xmlPromise.parse(body).then(data => {
+          console.log(data);
           const _d = {
-            name: data['ir:ikea-rest'].products.product.name,
-            partNumber: data['ir:ikea-rest'].products.product.partNumber,
+            name: data['ir:ikea-rest'].products.product.items.item.name,
+            partNumber: data['ir:ikea-rest'].products.product.items.item.partNumber,
           }
           console.log(_d);
           return _d;
         })
       });
-    }
+    },
+/*    combination: (root, args, context, info) => {
+      const reference = args.reference;
+      return gqlRequest().then( data => {
+        return data.bed;
+      });
+
+    }*/
+
   },
 };
 
