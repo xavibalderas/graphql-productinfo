@@ -1,6 +1,7 @@
 const { gqlRequest } = require('graphql-request');
 const { queries } = require('../queries/queries.js');
 const request = require('request-promise');
+const axios = require('axios');
 
 const { xmlPromise } = require('../components/xml-promise.js');
 
