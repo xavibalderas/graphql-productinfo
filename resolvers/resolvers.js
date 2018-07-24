@@ -23,6 +23,10 @@ const resolvers = {
       const r_uri =  {
         uri: 'https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml', //http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
         json: false, // Automatically parses the JSON string in the response
+        headers:{
+          'Content-Type': 'text/xml',
+          'Cache-Control': 'no-cache'
+        }
       }
       console.log(r_uri);
 
