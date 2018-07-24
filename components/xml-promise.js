@@ -6,7 +6,8 @@ const options = {
   ignoreAttributes : false,
   attributeNamePrefix: '',
   attrNodeName: 'attr',
-  textNodeName: 'value'
+  textNodeName: 'value',
+  localeRange: ""
 };
 
 
@@ -14,8 +15,11 @@ module.exports.xmlPromise =  {
 
   parse: function (body){
     return new Promise(function(resolve, reject){
-      const data = fastXmlParser.parse(body, options);
-      resolve(data);
+      if(fastXmlParser.validate(body) === true ){
+        var data = fastXmlParser.parse(body, options);
+        resolve(data);
+      }
+
     });
   }
 }

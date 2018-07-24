@@ -15,7 +15,7 @@ const typeDefs = gql`
 
   # The "Query" type is the root of all GraphQL queries.
   type Query {
-    allCombinations: [Combination]
+    #allCombinations: [Combination]
   #  combination(reference: String!): Combination
     product(partNumber: String!): Product
   }

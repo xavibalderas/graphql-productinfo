@@ -8,12 +8,12 @@ const URI_API = process.env.GRAPHCMS_API;
 
 const resolvers = {
   Query: {
-    allCombinations: () => {
-      return gqlRequest(URI_API, queries.allbeds).then(data => {
-        console.log(data);
-        return data.allBeds;
-      })
-    },
+    //allCombinations: () => {
+      //return gqlRequest(URI_API, queries.allbeds).then(data => {
+        //console.log(data);
+        //return data.allBeds;
+      //})
+    //},
     product: (root, args, context, info) => {
       console.log(args);
       console.log(root);
@@ -22,19 +22,24 @@ const resolvers = {
       const partNumber = args.partNumber;
       const r_uri =  {
         uri: 'https://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
-        json: false // Automatically parses the JSON string in the response
+        json: true // Automatically parses the JSON string in the response
       }
+
       return request(r_uri).then(body => {
+        console.log("----TEST----");
+        console.log(body);
+        console.log("----TEST----");
         return xmlPromise.parse(body).then(data => {
           console.log(data);
-          const _d = {
-            name: data['ir:ikea-rest'].products.product.items.item.name,
-            partNumber: data['ir:ikea-rest'].products.product.items.item.partNumber,
+          var _d = {
+            name: data['ir:ikea-rest'].products.product.name,
+            partNumber: data['ir:ikea-rest'].products.product.partNumber,
           }
           console.log(_d);
           return _d;
         })
-      });
+      })
+      .catch(function(err) {console.log(err)});
     },
 /*    combination: (root, args, context, info) => {
       const reference = args.reference;
