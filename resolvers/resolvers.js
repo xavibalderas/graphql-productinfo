@@ -15,15 +15,16 @@ const resolvers = {
       //})
     //},
     product: (root, args, context, info) => {
-      console.log(args);
-      console.log(root);
-      console.log(context);
-      console.log(info);
-      const partNumber = args.partNumber;
-      const r_uri =  {
+      //console.log(args);
+      //console.log(root);
+      //console.log(context);
+      //console.log(info);
+      //const partNumber = args.partNumber;
+      //const r_uri =  {
         uri: 'https://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
-        json: true // Automatically parses the JSON string in the response
+        json: false // Automatically parses the JSON string in the response
       }
+      console.log(r_uri);
 
       return request(r_uri).then(body => {
         console.log("----TEST----");
@@ -35,7 +36,7 @@ const resolvers = {
             name: data['ir:ikea-rest'].products.product.name,
             partNumber: data['ir:ikea-rest'].products.product.partNumber,
           }
-          console.log(_d);
+          //console.log(_d);
           return _d;
         })
       })
