@@ -21,22 +21,21 @@ const resolvers = {
       //console.log(context);
       //console.log(info);
       const partNumber = args.partNumber;
-      const r_uri =  {
-        uri: 'https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml', //http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
+      /*const r_uri =  {
+        uri: 'http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
         json: false, // Automatically parses the JSON string in the response
         headers:{
           'Content-Type': 'text/xml',
           'Cache-Control': 'no-cache'
         }
-      }
-      console.log(r_uri);
-      console.log('dsad');
+      }*/
 
-      return axios('https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml').then(response => {
+
+      return axios.get('http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml').then(response => {
         console.log("----TEST----");
-        console.log(response);
+        console.log(response.data);
         console.log("----TEST----");
-        return xmlPromise.parse(response).then(data => {
+        return xmlPromise.parse(response.data).then(data => {
           console.log(data);
           var _d = {
             name: data['ir:ikea-rest'].products.product.name,
