@@ -11,6 +11,13 @@ const typeDefs = gql`
   type Product {
     partNumber: String!
     name: String
+    type: String
+    normalPrice: String!
+    secondPrice: String 
+    familyPrice_startDate: String
+    familyPrice_endDate: String
+    familyPrice_price: String
+    familyPrice_disclaimer: String
   }
 
   # The "Query" type is the root of all GraphQL queries.

@@ -9,52 +9,33 @@ const URI_API = process.env.GRAPHCMS_API;
 
 const resolvers = {
   Query: {
-    //allCombinations: () => {
-      //return gqlRequest(URI_API, queries.allbeds).then(data => {
-        //console.log(data);
-        //return data.allBeds;
-      //})
-    //},
+
     product: (root, args, context, info) => {
-      //console.log(args);
-      //console.log(root);
-      //console.log(context);
-      //console.log(info);
+
       const partNumber = args.partNumber;
-      /*const r_uri =  {
-        uri: 'http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
-        json: false, // Automatically parses the JSON string in the response
-        headers:{
-          'Content-Type': 'text/xml',
-          'Cache-Control': 'no-cache'
-        }
-      }*/
-
-
       return axios.get('http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml').then(response => {
-        console.log("----TEST----");
+        console.log("----START_RAW_DATA----");
         console.log(response.data);
-        console.log("----TEST----");
+        console.log("----FINISH_RAW_DATA----");
         return xmlPromise.parse(response.data).then(data => {
           console.log(data);
+
           var _d = {
             name: data['ir:ikea-rest'].products.product.name,
             partNumber: data['ir:ikea-rest'].products.product.partNumber,
+            type: data['ir:ikea-rest'].products.product.items.item.type,
+            normalPrice: data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.attr.unformatted,
+            secondPrice: data['ir:ikea-rest'].products.product.items.item.prices.second.priceNormal,
+            familyPrice_startDate: data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.startDate,
+            familyPrice_endDate: data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.endDate,
+            familyPrice_price: data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.unformatted,
+            familyPrice_disclaimer: data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceDisclaimer,
           }
-          //console.log(_d);
           return _d;
         })
       })
       .catch(function(err) {console.log(err)});
     },
-/*    combination: (root, args, context, info) => {
-      const reference = args.reference;
-      return gqlRequest().then( data => {
-        return data.bed;
-      });
-
-    }*/
-
   },
 };
 
