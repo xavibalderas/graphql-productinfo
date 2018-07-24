@@ -19,8 +19,8 @@ const resolvers = {
       //console.log(root);
       //console.log(context);
       //console.log(info);
-      //const partNumber = args.partNumber;
-      //const r_uri =  {
+      const partNumber = args.partNumber;
+      const r_uri =  {
         uri: 'https://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
         json: false // Automatically parses the JSON string in the response
       }
