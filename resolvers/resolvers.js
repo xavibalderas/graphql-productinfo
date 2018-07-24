@@ -21,7 +21,7 @@ const resolvers = {
       //console.log(info);
       const partNumber = args.partNumber;
       const r_uri =  {
-        uri: 'https://www.ikea.com/ch/de/catalog/products/', //http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
+        uri: 'https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml', //http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml',
         json: false, // Automatically parses the JSON string in the response
       }
       console.log(r_uri);
