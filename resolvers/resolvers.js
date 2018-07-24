@@ -30,11 +30,11 @@ const resolvers = {
       }
       console.log(r_uri);
 
-      return axios('https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml').then(body => {
+      return axios('https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml').then(response => {
         console.log("----TEST----");
-        console.log(body);
+        console.log(response);
         console.log("----TEST----");
-        return xmlPromise.parse(body).then(data => {
+        return xmlPromise.parse(response).then(data => {
           console.log(data);
           var _d = {
             name: data['ir:ikea-rest'].products.product.name,
