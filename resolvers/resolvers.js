@@ -30,6 +30,7 @@ const resolvers = {
         }
       }
       console.log(r_uri);
+      console.log('dsad');
 
       return axios('https://www.ikea.com/ch/de/catalog/products/30319129/?type=xml').then(response => {
         console.log("----TEST----");
