@@ -42,7 +42,6 @@ console.log(data['ir:ikea-rest'].products.product.items.item.prices['family-norm
             _d.familyPrice_disclaimer = data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceDisclaimer;
           }
           var infos = [];
-          console.log(data['ir:ikea-rest'].products.product.items.item.attributesItems.attributeItem);
           const att = data['ir:ikea-rest'].products.product.items.item.attributesItems.attributeItem;
           for (var i = 0; i < att.length; i++) {
             infos.push(att[i].attr.name + ': ' + att[i].value);
