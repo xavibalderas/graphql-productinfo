@@ -19,15 +19,14 @@ const resolvers = {
         console.log(response.data);
         console.log("----FINISH_RAW_DATA----");
         return xmlPromise.parse(response.data).then(data => {
-          console.log(data);
-console.log(data['ir:ikea-rest'].products.product.items.item.prices['family-normal']);
+
           var _d = {
             name: data['ir:ikea-rest'].products.product.name,
             partNumber: data['ir:ikea-rest'].products.product.items.item.partNumber,
             type: data['ir:ikea-rest'].products.product.items.item.type,
             normalPrice: data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.attr.unformatted,
             secondPrice: (data['ir:ikea-rest'].products.product.items.item.prices.normal.pricePrevious!='') ? data['ir:ikea-rest'].products.product.items.item.prices.normal.pricePrevious.attr.unformatted : '',
-            priceDisclaimer: (data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.priceDisclaimer!='') ? data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.priceDisclaimer : '',
+            priceDisclaimer: (data['ir:ikea-rest'].products.product.items.item.prices.normal.priceDisclaimer!='') ? data['ir:ikea-rest'].products.product.items.item.prices.normal.priceDisclaimer : '',
             familyPrice_startDate: '',
             familyPrice_endDate: '',
             familyPrice_price: '',
