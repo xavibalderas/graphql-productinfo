@@ -20,6 +20,7 @@ const typeDefs = gql`
     familyPrice_endDate: String
     familyPrice_price: String
     familyPrice_disclaimer: String
+    info: [String]
   }
 
   # The "Query" type is the root of all GraphQL queries.
