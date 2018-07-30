@@ -15,6 +15,7 @@ const typeDefs = gql`
     type: String
     normalPrice: String!
     secondPrice: String
+    priceDisclaimer: String
     familyPrice_startDate: String
     familyPrice_endDate: String
     familyPrice_price: String

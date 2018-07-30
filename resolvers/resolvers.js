@@ -26,13 +26,15 @@ console.log(data['ir:ikea-rest'].products.product.items.item.prices['family-norm
             partNumber: data['ir:ikea-rest'].products.product.items.item.partNumber,
             type: data['ir:ikea-rest'].products.product.items.item.type,
             normalPrice: data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.attr.unformatted,
-            secondPrice: data['ir:ikea-rest'].products.product.items.item.prices.second.priceNormal,
+            secondPrice: (data['ir:ikea-rest'].products.product.items.item.prices.normal.pricePrevious!='') ? data['ir:ikea-rest'].products.product.items.item.prices.normal.pricePrevious.attr.unformatted : '',
+            priceDisclaimer: (data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.priceDisclaimer!='') ? data['ir:ikea-rest'].products.product.items.item.prices.normal.priceNormal.priceDisclaimer : '',
             familyPrice_startDate: '',
             familyPrice_endDate: '',
             familyPrice_price: '',
             familyPrice_disclaimer: '',
             lang: q_lang
           }
+
           if(data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal!=''){
             _d.familyPrice_startDate = data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.startDate;
             _d.familyPrice_endDate = data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.endDate;
