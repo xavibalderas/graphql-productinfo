@@ -25,7 +25,7 @@ const typeDefs = gql`
   type Query {
     #allCombinations: [Combination]
   #  combination(reference: String!): Combination
-    product(partNumber: String!, lang: String): Product
+    product(partNumber: String!, lang: String!): Product
   }
 `;
 
