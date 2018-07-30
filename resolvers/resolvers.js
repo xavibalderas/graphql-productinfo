@@ -13,7 +13,8 @@ const resolvers = {
     product: (root, args, context, info) => {
 
       const partNumber = args.partNumber;
-      return axios.get('http://www.ikea.com/ch/de/catalog/products/' + partNumber + '/?type=xml').then(response => {
+      const q_lang = args.lang;
+      return axios.get('http://www.ikea.com/ch/' + q_lang + '/catalog/products/' + partNumber + '/?type=xml').then(response => {
         console.log("----START_RAW_DATA----");
         console.log(response.data);
         console.log("----FINISH_RAW_DATA----");
@@ -29,7 +30,8 @@ console.log(data['ir:ikea-rest'].products.product.items.item.prices['family-norm
             familyPrice_startDate: '',
             familyPrice_endDate: '',
             familyPrice_price: '',
-            familyPrice_disclaimer: ''
+            familyPrice_disclaimer: '',
+            lang: q_lang
           }
           if(data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal!=''){
             _d.familyPrice_startDate = data['ir:ikea-rest'].products.product.items.item.prices['family-normal'].priceNormal.attr.startDate;

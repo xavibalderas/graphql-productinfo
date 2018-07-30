@@ -10,10 +10,11 @@ const typeDefs = gql`
 
   type Product {
     partNumber: String!
+    lang: String
     name: String
     type: String
     normalPrice: String!
-    secondPrice: String 
+    secondPrice: String
     familyPrice_startDate: String
     familyPrice_endDate: String
     familyPrice_price: String
@@ -24,7 +25,7 @@ const typeDefs = gql`
   type Query {
     #allCombinations: [Combination]
   #  combination(reference: String!): Combination
-    product(partNumber: String!): Product
+    product(partNumber: String!, lang: String): Product
   }
 `;
 
