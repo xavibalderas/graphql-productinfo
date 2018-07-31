@@ -43,7 +43,9 @@ const resolvers = {
           var infos = [];
           const att = data['ir:ikea-rest'].products.product.items.item.attributesItems.attributeItem;
           for (var i = 0; i < att.length; i++) {
-            infos.push(att[i].attr.name + ': ' + att[i].value);
+            if (att[i].value !="-"){
+              infos.push(att[i].attr.name + ': ' + att[i].value);
+            }
           }
           _d.info = infos;
           return _d;
