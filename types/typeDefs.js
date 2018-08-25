@@ -8,6 +8,16 @@ const typeDefs = gql`
     reference: String
   }
 
+  type Productt {
+    ItemNo: String
+    ProductName: String
+    ProductTypeName: String
+    ValidDesignText: String
+    OnlineSellable: Boolean
+    BreathTakingItem: Boolean
+    DesignerNameComm: String
+  }
+
   type Product {
     partNumber: String!
     lang: String
@@ -28,6 +38,7 @@ const typeDefs = gql`
     #allCombinations: [Combination]
   #  combination(reference: String!): Combination
     product(partNumber: String!, lang: String!): Product
+    products(productList: [String]!,  lang: String!): [Productt]
   }
 `;
 

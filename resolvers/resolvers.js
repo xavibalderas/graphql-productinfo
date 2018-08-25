@@ -3,12 +3,21 @@ const { queries } = require('../queries/queries.js');
 const request = require('request-promise');
 const axios = require('axios');
 
+
+const { IKEARest } = require('../components/ikea_rest.js');
+
 const { xmlPromise } = require('../components/xml-promise.js');
 
 const URI_API = process.env.GRAPHCMS_API;
 
 const resolvers = {
   Query: {
+
+    products: (root, args, context, info ) => {
+      const productList = args.productList;
+      const q_lang = args.lang;
+      return IKEARest.getList(productList, q_lang);
+    },
 
     product: (root, args, context, info) => {
 

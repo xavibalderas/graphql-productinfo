@@ -7,7 +7,8 @@ const options = {
   attributeNamePrefix: '',
   attrNodeName: 'attr',
   textNodeName: 'value',
-  localeRange: ""
+  localeRange: "",
+  ignoreNameSpace: true
 };
 
 
