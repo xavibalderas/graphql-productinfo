@@ -8,6 +8,21 @@ const typeDefs = gql`
     reference: String
   }
 
+  type AttributeGroup{
+    GroupName: String
+    AttributeList: [Attribute]
+  }
+
+  type Attribute{
+    Name: String
+    Value: Value
+  }
+
+  type RetailItemCustomerBenefit{
+    CustomerBenefitText: String
+    SortNo: Int
+  }
+
   type Productt {
     ItemNo: String
     ProductName: String
@@ -16,6 +31,8 @@ const typeDefs = gql`
     OnlineSellable: Boolean
     BreathTakingItem: Boolean
     DesignerNameComm: String
+    AttributeGroupList: [AttributeGroup]
+    RetailItemCustomerBenefitList: [RetailItemCustomerBenefit]
   }
 
   type Product {
@@ -32,6 +49,7 @@ const typeDefs = gql`
     familyPrice_disclaimer: String
     info: [String]
   }
+
 
   # The "Query" type is the root of all GraphQL queries.
   type Query {
