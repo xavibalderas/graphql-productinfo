@@ -12,13 +12,19 @@ const URI_API = process.env.GRAPHCMS_API;
 
 const resolvers = {
   Query: {
-
     products: (root, args, context, info ) => {
       const productList = args.productList;
       const q_lang = args.lang;
-      return IKEARest.getList(productList, q_lang);
+      return IKEARest.getProducts(productList, q_lang);
     },
-
+    availability: (root, args, context, info ) => {
+      const productList = args.productList;
+      const store = args.store;
+      const q_lang = args.lang;
+      let u = IKEARest.getAvailability(productList, q_lang, store);
+      return u;
+    },
+    
     product: (root, args, context, info) => {
 
       const partNumber = args.partNumber;
