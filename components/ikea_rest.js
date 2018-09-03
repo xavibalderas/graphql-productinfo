@@ -29,6 +29,7 @@ const getAvailability = (partNumber, lang, store) => {
     return xmlPromise.parse(response.data).then(data => {
       let d =  data['ikea-rest'].availability.localStore.filter((element, index)=>{return element.attr.buCode==store ? true : false});
       console.log(d[0].stock);
+      d[0].stock.partNumber = partNumber;
       return d[0].stock;
     });
   })// axios.then
