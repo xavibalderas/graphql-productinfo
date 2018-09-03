@@ -15,7 +15,7 @@ const getProduct = (partNumber, lang) => {
   return axios.get(uri.product_info)
   .then(response => {
     return xmlPromise.parse(response.data).then(data => {
-      console.log(data.RetailItemComm.RetailItemImageList);
+      data.RetailItemComm.ItemNo = partNumber;
       return data.RetailItemComm;
     });
   })// axios.then
