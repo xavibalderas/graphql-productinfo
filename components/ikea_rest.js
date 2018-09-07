@@ -15,6 +15,9 @@ const getProduct = (partNumber, lang) => {
   return axios.get(uri.product_info)
   .then(response => {
     return xmlPromise.parse(response.data).then(data => {
+      if (data.RetailItemComm === undefined){
+        return {ItemNo: partNumber}
+      }
       data.RetailItemComm.ItemNo = partNumber;
       if (data.RetailItemComm.RetailItemCustomerBenefitList!== undefined){
         if (!Array.isArray(data.RetailItemComm.RetailItemCustomerBenefitList.RetailItemCustomerBenefit)){
