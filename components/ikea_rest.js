@@ -16,6 +16,10 @@ const getProduct = (partNumber, lang) => {
   .then(response => {
     return xmlPromise.parse(response.data).then(data => {
       data.RetailItemComm.ItemNo = partNumber;
+      if (!Array.isArray(data.RetailItemComm.RetailItemCustomerBenefitList.RetailItemCustomerBenefit)){
+        data.RetailItemComm.RetailItemCustomerBenefitList.RetailItemCustomerBenefit = [data.RetailItemComm.RetailItemCustomerBenefitList.RetailItemCustomerBenefit]
+      }
+      //console.log(data.RetailItemComm.RetailItemCustomerBenefitList);
       return data.RetailItemComm;
     });
   })// axios.then
