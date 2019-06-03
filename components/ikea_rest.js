@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { xmlPromise } = require('../components/xml-promise.js');
+const moment = require('moment');
 
 const uri_builder = (partNumber, language) => {
   return {
@@ -18,6 +19,43 @@ const getProduct = (partNumber, lang) => {
       if (data.RetailItemComm === undefined){
         return {ItemNo: partNumber}
       }
+
+      if(Array.isArray(data.RetailItemComm.RetailItemCommPriceList.RetailItemCommPrice)){
+        //there is family price!!!
+        var prices = data.RetailItemComm.RetailItemCommPriceList.RetailItemCommPrice;
+        var f_p = {};
+        var family = false;
+        var normalPrice = 0;
+        for (var i = 0; i < prices.length; i++) {
+          var lpric = prices[i];
+          if (lpric.RetailPriceType == 'IKEAFamilySalesUnitPrice'){
+            var _from = lpric.ValidFromDateTime.slice(0, -1);
+            var _to = lpric.ValidToDateTime.slice(0, -1);
+            var today = moment();
+            var mfrom = moment(_from, 'YYYY-MM-DD');
+            var mto = moment(_to, 'YYYY-MM-DD');
+            if ((mfrom<=today)&& (today<=mto)){
+              family = true;
+                f_p ={
+                  'RetailPriceType' : 'IKEAFamilySalesUnitPrice',
+                  'Price': lpric.Price,
+                  'PriceExclTax': lpric.PriceExclTax,
+                  'CurrencyCode': lpric.CurrencyCode,
+                  'ValidFromDateTime': mfrom.format('DD-MM-YYYY'),
+                  'ValidToDateTime': mto.format('DD-MM-YYYY')
+                }
+              }
+          }else {
+            normalPrice = prices[i].Price;
+            if (!family){
+              f_p = prices[i];
+            }
+          }
+        }
+        f_p.PriceNotOffer = normalPrice;
+        data.RetailItemComm.RetailItemCommPriceList.RetailItemCommPrice = f_p;
+      }
+
       data.RetailItemComm.ItemNo = partNumber;
       if (data.RetailItemComm.RetailItemCustomerBenefitList!== undefined){
         if (!Array.isArray(data.RetailItemComm.RetailItemCustomerBenefitList.RetailItemCustomerBenefit)){

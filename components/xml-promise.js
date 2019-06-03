@@ -16,7 +16,7 @@ module.exports.xmlPromise =  {
 
   parse: function (body){
     return new Promise(function(resolve, reject){
-      if(fastXmlParser.validate(body) === true ){
+      if(fastXmlParser.validate(body) === true ){        
         var data = fastXmlParser.parse(body, options);
         resolve(data);
       }

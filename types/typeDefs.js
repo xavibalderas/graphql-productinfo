@@ -36,6 +36,9 @@ const typeDefs = gql`
     Price: Float
     PriceExclTax: Float
     CurrencyCode: String
+    ValidFromDateTime: String
+    ValidToDateTime: String
+    PriceNotOffer: Float
   }
 
   type RetailItemImageList {
